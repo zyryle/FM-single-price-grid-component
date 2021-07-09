@@ -50,6 +50,7 @@ p {
 
 #container {
   display: grid;
+  /* grid-auto-flow: column; */
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(20rem, auto);
 }
@@ -144,18 +145,17 @@ p {
 /* Screens 375px and 1440px */
 @media screen and (min-width: 600px) {
   body {
-    padding: 0;
+    padding: 0 3rem;
   }
 
   #container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 30rem);
     grid-auto-rows: minmax(20rem, auto);
-    width: 38vw;
   }
 
   .boxes {
-    padding: 4rem;
+    padding: 5rem;
   }
 
   .box-1 {
